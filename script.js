@@ -4,6 +4,16 @@ const toggleButtons = document.querySelectorAll('.toggle-btn');
 // Initialize the active div variable
 let activeDiv = null;
 
+// Add a click event listener to the document
+document.addEventListener('click', (event) => {
+  // Check if the clicked element is inside the active div and not a toggle button
+  if (activeDiv && !activeDiv.contains(event.target) && !event.target.classList.contains('toggle-btn')) {
+    // If it's not, hide the active div by removing the show class
+    activeDiv.classList.remove('show');
+    activeDiv = null;
+  }
+});
+
 // Loop through each toggle button
 toggleButtons.forEach(button => {
   // Add a click event listener to each button
