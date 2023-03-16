@@ -49,6 +49,15 @@ body {
     min-height: 20px;
 
   }
+
+  /* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .toggle-btn {
+    width: 200px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+}
   
   .toggle-div {
     display: none;
