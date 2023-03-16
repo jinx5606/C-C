@@ -32,8 +32,11 @@ body {
   
   .row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 20px;
+    overflow-x: auto; /* enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS devices */
   }
   
   .toggle-btn {
@@ -41,7 +44,7 @@ body {
     padding: 10px 20px;
     background-color: #d8cdb76a;
     border: none;
-    margin: 0 0px;
+    margin: 0 10px 10 0;
     cursor: pointer;
     width: 150px;
     height: 50px;
@@ -56,6 +59,16 @@ body {
     width: 270px;
     height: 150px;
     font-size: 2.2rem;
+    margin: 0 10px 0 0;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .toggle-btn {
+    width: 270px;
+    height: 50px;
+    font-size: 1.2rem;
+    margin: 0 10px 0 0;
   }
 }
   
