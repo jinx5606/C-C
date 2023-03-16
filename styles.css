@@ -53,8 +53,8 @@ body {
   /* Media query for mobile devices */
 @media only screen and (max-width: 1000px) {
   .toggle-btn {
-    width: 200px;
-    height: 100px;
+    width: 270px;
+    height: 150px;
     font-size: 1.2rem;
   }
 }
